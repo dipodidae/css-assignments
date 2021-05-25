@@ -1,0 +1,13 @@
+/**
+1. Make sure the dimmer is transparent black over the whole page
+    (covers the whole page but is behind the modal)
+    - Look up position: fixed
+2. Make sure the modal is in the center of the page
+    - Modal has static width (600px)
+    - Modal is similar in design to a card
+        - Ok / cancel button
+        - Image should span the width of the modal
+        - Image should retain original aspect ratio
+    - Position: fixed
+    - Flexbox
+*/

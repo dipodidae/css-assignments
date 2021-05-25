@@ -1,0 +1,23 @@
+/**
+1. Zorg dat label van een field boven de input word getoond
+    a. Kijk naar Bulma
+    b. Google "how to put an input label..."
+
+2. Zorg dat een field de breedte van een parent heeft
+    a. Zorg dat de input in een field ook de breedte van een parent heeft
+        - Kijk naar flexbox
+        - Kijk naar hoe Bulma het doet
+
+3. Zorg dat number rechts naast street staat
+    a. Kijk goed naar de class names
+    b. Gebruik flexbox
+
+4.  Staat los van de form (iets dat altijd in je website actief is)
+    - De button krijgt een andere design
+    - De button krijgt rounded corners
+    - De button heeft geen border
+    - De button heeft een hover state
+    - De button heeft een active state
+
+5.  De submit knop in de form staat rechts (flexbox)
+*/
