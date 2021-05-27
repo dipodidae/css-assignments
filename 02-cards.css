@@ -1,0 +1,45 @@
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding:0 100px;
+  justify-content: flex-start;
+}
+
+.card {
+  max-width: 400px;
+  margin-bottom: 1em;
+  margin-right:1em;
+  display:flex;
+  flex-direction: column;
+}
+
+.card > header {
+  padding:.5em;
+}
+
+.card figure > img {
+  width: 100%;
+  height: auto;
+}
+
+.card > .content {
+  padding:.5em;
+  flex-grow: 2;
+}
+
+.card h2 {
+  font-family: 'Open Sans';
+  font-size: 20px;
+}
+
+.form-controls {
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding:.5em;
+}
+
+.form-controls .button {
+  border-top: 1px solid white;
+  margin-left:.5em;
+}
