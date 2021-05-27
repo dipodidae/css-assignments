@@ -4,60 +4,82 @@
         <title>Macha's CSS assignment - 01 - Form</title>
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="01-form.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
+        <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+        rel="stylesheet"
+      />
+      <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Open+Sans:ital@1&family=Pattaya&family=Prompt:wght@600&display=swap" rel="stylesheet">
     </head>
     <body>
+        <aside id="website-sidebar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./00-website.html" class="nav-link">
+                            Website
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./01-form.html" class="nav-link">
+                            Form
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./02-cards.html" class="nav-link">
+                            Cards
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./03-modal.html" class="nav-link">
+                            Modal
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
         <main>
-            <header>
-                <h1>Form</h1>
+            <header id="website-header">
+                <div class="content">
+                    <h1>Form</h1>
+                </div>
             </header>
-            <aside>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="./00-website.html">00 - Website</a>
-                        </li>
-                        <li>
-                            <a href="./01-form.html">01 - Form</a>
-                        </li>
-                        <li>
-                            <a href="./02-cards.html">02 - Cards</a>
-                        </li>
-                        <li>
-                            <a href="./03-modal.html">02 - Modal</a>
-                        </li>
-                    </ul>
-                </nav>
-            </aside>
+           
             <section>
-                <form action="#">
+                <form action="#" class="form content">
+
                     <div class="field">
-                        <label for="form-input-name">Name</label>
+                        <label for="form-input-name">Name:</label>
                         <input id="form-input-name" type="text">
                     </div>
 
                     <div class="field">
-                        <label for="form-input-email">Email</label>
+                        <label for="form-input-email">Email:</label>
                         <input id="form-input-email" type="email">
                     </div>
 
                     <div class="field-group">
-                        <div>
-                            <label for="form-input-street">Street</label>
+                        <div class="field form-input-street-group">
+                            <label for="form-input-street">Street:</label>
                             <input id="form-input-street" type="text">
                         </div>
 
                         <div class="field">
-                            <label for="form-input-number">Number</label>
+                            <label for="form-input-number">Number:</label>
                             <input id="form-input-number" type="text">
                         </div>
                     </div>
 
                     <div class="field">
-                        <label for="form-input-message">message</label>
+                        <label for="form-input-message">Message:</label>
                         <textarea id="form-input-message"></textarea>   
                     </div>
 
-                    <button type="submit">Send</button>
+                    <div class="form-controls">
+                        <button type="reset" class="button is-danger">Reset</button>
+                        <button type="submit" class="button">Send</button>
+                    </div>
                 </form>
             </section>
         </main>

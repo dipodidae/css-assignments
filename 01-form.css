@@ -1,3 +1,87 @@
+.form {
+    color: #1b2021;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.field > label {
+    position: absolute;
+    top: -11px;
+    left: 11px;
+    background: #eac8af;
+    padding: .5em;
+    width: inline-block;
+    border:1px solid #fff;
+}
+
+.field input {
+    line-height: 3em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 4em;
+}
+
+.form > .field,
+.form > .field-group {
+    margin:1em 0;
+}
+
+.field input {
+    display:block;
+}
+
+.field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-input-street-group {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+#form-input-number {
+    width: 100%;
+}
+
+.form-controls {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+
+.form-controls .button {
+    margin-left:.5em;
+}
+
+.submit-button:hover {
+	background-color: white;
+    color: #5f939a;
+}
+
+
+
 /**
 1. Zorg dat label van een field boven de input word getoond
     a. Kijk naar Bulma

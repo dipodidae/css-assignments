@@ -1,3 +1,121 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+:root {
+    background-color: #eac8af;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-areas:
+    "sidebar   content";
+
+}
+@media only screen and (max-width: 700px)  {
+   body {
+    grid-template-areas: none;
+    grid-template-columns: none;
+   }
+}
+
+html, body {
+    height: 100%;
+
+}
+
+main {
+    grid-area: "content";
+    max-height:100%;
+    overflow-y: auto;
+}
+
+/**
+Navbar
+*/
+
+#website-sidebar {
+    grid-area: "sidebar";
+    background-color: #5f939a;
+    max-height: 100%;
+}
+
+#website-sidebar nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    font-size: 30px;
+    font-family: 'Open Sans';
+    list-style: none;
+}
+
+#website-sidebar nav ul li {
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+#website-sidebar nav ul li > a {
+    display: flex;
+    height: 5rem;
+    color: rgba(255,255,255,.7);
+    text-decoration: none;
+    align-items: center;
+    background:rgba(255,255,255,0);
+    padding-left: 1rem;
+    transition: background .2s;
+}
+
+#website-sidebar nav ul li > a:hover {
+    background:rgba(255,255,255,1);
+    color: #5f939a;
+}
+
+.button {
+	padding: 0.7em;
+    border-radius: 5px;
+    border-color: white;
+    background-color: #5f939a;
+    color: white;
+    font-size: 14px;
+}
+
+.button.is-danger {
+    background: red;
+}
+
+
+/**
+Content
+*/
+
+main {
+    color: #1b2021;
+}
+
+
+.content {
+    margin: 0 0 0 100px;
+    max-width: 700px;
+}
+
+
+
+.content p {
+    line-height: 2em;
+    margin-bottom:3em;
+}
+
+#website-header {
+    padding: 50px 0;
+    font-size: 80px;
+    font-family: 'Pattaya', sans-serif;
+    background-image: url('https://picsum.photos/200');
+    background-size: cover;
+}
+
+
+ 
+
 /**
 - Make sure the navigation is always on the left
 - Navigation does not look like a bulleted list
