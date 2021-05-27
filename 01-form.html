@@ -12,26 +12,27 @@
       <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Open+Sans:ital@1&family=Pattaya&family=Prompt:wght@600&display=swap" rel="stylesheet">
     </head>
     <body>
-        <aside >
-            <nav class="navbar">
-                <ul class="navbar-list">
-                    <li class="navbar-item">
+        <aside id="website-sidebar">
+            <nav>
+                <ul>
+                    <li>
                         <a href="./00-website.html" class="nav-link">
-                        <span class="navbar-item-text">Website</span>
+                            Website
                         </a>
                     </li>
-                    <li class="navbar-item">
+                    <li>
                         <a href="./01-form.html" class="nav-link">
-                            <span class="navbar-item-text">Form</span></a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="./02-cards.html" class="nav-link">
-                            <span class="navbar-item-text">Cards</span>
+                            Form
                         </a>
                     </li>
-                    <li class="navbar-item">
+                    <li>
+                        <a href="./02-cards.html" class="nav-link">
+                            Cards
+                        </a>
+                    </li>
+                    <li>
                         <a href="./03-modal.html" class="nav-link">
-                            <span class="navbar-item-text">Modal</span>
+                            Modal
                         </a>
                     </li>
                 </ul>
@@ -39,12 +40,14 @@
         </aside>
 
         <main>
-            <header>
-                <h1>Form</h1>
+            <header id="website-header">
+                <div class="content">
+                    <h1>Form</h1>
+                </div>
             </header>
            
             <section>
-                <form action="#" class="form">
+                <form action="#" class="form content">
 
                     <div class="field">
                         <label for="form-input-name">Name:</label>
@@ -57,7 +60,7 @@
                     </div>
 
                     <div class="field-group">
-                        <div class="form-input-street-group">
+                        <div class="field form-input-street-group">
                             <label for="form-input-street">Street:</label>
                             <input id="form-input-street" type="text">
                         </div>
@@ -73,7 +76,10 @@
                         <textarea id="form-input-message"></textarea>   
                     </div>
 
-                    <button type="submit" class="submit-button">Send</button>
+                    <div class="form-controls">
+                        <button type="reset" class="button is-danger">Reset</button>
+                        <button type="submit" class="button">Send</button>
+                    </div>
                 </form>
             </section>
         </main>

@@ -1,12 +1,21 @@
 .form {
-    width: 60%;
-    position: absolute;
-    top: 200px;
-    left: 300px;
-    line-height: 3em;
     color: #1b2021;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+}
+
+.field > label {
+    position: absolute;
+    top: -11px;
+    left: 11px;
+    background: #eac8af;
+    padding: .5em;
+    width: inline-block;
+    border:1px solid #fff;
+}
+
+.field input {
+    line-height: 3em;
 }
 
 input, textarea {
@@ -23,8 +32,17 @@ textarea {
     min-height: 4em;
 }
 
+.form > .field,
+.form > .field-group {
+    margin:1em 0;
+}
+
+.field input {
+    display:block;
+}
+
 .field {
-    margin-right:20px;
+    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -45,17 +63,16 @@ textarea {
     width: 100%;
 }
 
-.submit-button {
-	min-width: 150px;
-	max-width: 250px;
-    float: right;
-	margin: 2em 1.3em;
-	padding: 0.7em;
-    border-radius: 5px;
-    border-color: white;
-    background-color: #5f939a;
-    color: white;
-    font-size: 14px;
+.form-controls {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+
+.form-controls .button {
+    margin-left:.5em;
 }
 
 .submit-button:hover {
