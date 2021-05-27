@@ -11,37 +11,44 @@
       />
       <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Open+Sans:ital@1&family=Pattaya&family=Prompt:wght@600&display=swap" rel="stylesheet">
     </head>
+
     <body>
-        <main>
-            <header>
-                <h1>Cards</h1>
-            </header>
-            <aside >
-                <nav class="navbar">
-                    <ul class="navbar-list">
-                        <li class="navbar-item">
+            <aside id="website-sidebar">
+                <nav>
+                    <ul>
+                        <li>
                             <a href="./00-website.html" class="nav-link">
-                            <span class="navbar-item-text">Website</span>
+                                Website
                             </a>
                         </li>
-                        <li class="navbar-item">
+                        <li>
                             <a href="./01-form.html" class="nav-link">
-                                <span class="navbar-item-text">Form</span></a>
-                        </li>
-                        <li class="navbar-item">
-                            <a href="./02-cards.html" class="nav-link">
-                                <span class="navbar-item-text">Cards</span>
+                                Form
                             </a>
                         </li>
-                        <li class="navbar-item">
+                        <li>
+                            <a href="./02-cards.html" class="nav-link">
+                                Cards
+                            </a>
+                        </li>
+                        <li>
                             <a href="./03-modal.html" class="nav-link">
-                                <span class="navbar-item-text">Modal</span>
+                                Modal
                             </a>
                         </li>
                     </ul>
                 </nav>
             </aside>
-            <section>
+
+        <main>
+            <header id="website-header" class="section">
+                <div class="content">
+                    <h1>Cards</h1>
+                </div>
+            </header>
+
+            <section id="card-container" class="section">
+
                 <article class="card">
                     <header>
                         <h2>Card 01</h2>
@@ -53,18 +60,31 @@
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a nisi id ex aliquet sollicitudin. Mauris eleifend magna purus, non ullamcorper odio tincidunt at. Nam eu leo eu sapien sagittis aliquet. Sed turpis felis, volutpat vel blandit id, ultrices dapibus tortor. Nullam interdum sagittis purus, vel aliquet dolor. Mauris dictum aliquet nisl vitae facilisis. Curabitur orci odio, hendrerit eu euismod eget, blandit ac eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi libero lacus, posuere a nibh id, viverra aliquam odio.
                         </p>
+                        <div class="form-controls">
+                            <button class="button is-danger" href="#">Cancel</button>
+                            <button class="button is-primary" href="#">Ok</button> 
+                        </div>    
                     </div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a class="button is-danger" href="#">Cancel</a>
-                            </li>
-                            <li>
-                                <a class="button is-primary" href="#">Ok</a>
-                            </li>
-                        </ul>
-                    </nav>
+                </article>  
+                
+                <article class="card">
+                    <header>
+                        <h2>Card 01</h2>
+                    </header>
+                    <figure>
+                        <img src="https://picsum.photos/200" alt="">
+                    </figure>
+                    <div class="content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a nisi id ex aliquet sollicitudin. Mauris eleifend magna purus, non ullamcorper odio tincidunt at. Nam eu leo eu sapien sagittis aliquet. Sed turpis felis, volutpat vel blandit id, ultrices dapibus tortor. Nullam interdum sagittis purus, vel aliquet dolor. Mauris dictum aliquet nisl vitae facilisis. Curabitur orci odio, hendrerit eu euismod eget, blandit ac eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi libero lacus, posuere a nibh id, viverra aliquam odio.
+                        </p>
+                        <div class="form-controls">
+                            <button class="button is-danger" href="#">Cancel</button>
+                            <button class="button is-primary" href="#">Ok</button> 
+                        </div>   
+                    </div>
                 </article>
+
                 <article class="card">
                     <header>
                         <h2>Card 01</h2>
@@ -76,19 +96,14 @@
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a nisi id ex aliquet sollicitudin. Mauris eleifend magna purus, non ullamcorper odio tincidunt at. Nam eu leo eu sapien sagittis aliquet. Sed turpis felis, volutpat vel blandit id, ultrices dapibus tortor. Nullam interdum sagittis purus, vel aliquet dolor. Mauris dictum aliquet nisl vitae facilisis. Curabitur orci odio, hendrerit eu euismod eget, blandit ac eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi libero lacus, posuere a nibh id, viverra aliquam odio.
                         </p>
+                        <div class="form-controls">
+                            <button class="button is-danger" href="#">Cancel</button>
+                            <button class="button is-primary" href="#">Ok</button> 
+                        </div>   
                     </div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a class="button is-danger" href="#">Cancel</a>
-                            </li>
-                            <li>
-                                <a class="button is-primary" href="#">Ok</a>
-                            </li>
-                        </ul>
-                    </nav>
                 </article>
-                <article class="card">
+
+                 <article class="card">
                     <header>
                         <h2>Card 01</h2>
                     </header>
@@ -99,40 +114,11 @@
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a nisi id ex aliquet sollicitudin. Mauris eleifend magna purus, non ullamcorper odio tincidunt at. Nam eu leo eu sapien sagittis aliquet. Sed turpis felis, volutpat vel blandit id, ultrices dapibus tortor. Nullam interdum sagittis purus, vel aliquet dolor. Mauris dictum aliquet nisl vitae facilisis. Curabitur orci odio, hendrerit eu euismod eget, blandit ac eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi libero lacus, posuere a nibh id, viverra aliquam odio.
                         </p>
+                        <div class="form-controls">
+                            <button class="button is-danger" href="#">Cancel</button>
+                            <button class="button is-primary" href="#">Ok</button> 
+                        </div>   
                     </div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a class="button is-danger" href="#">Cancel</a>
-                            </li>
-                            <li>
-                                <a class="button is-primary" href="#">Ok</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </article>
-                <article class="card">
-                    <header>
-                        <h2>Card 01</h2>
-                    </header>
-                    <figure>
-                        <img src="https://picsum.photos/200" alt="">
-                    </figure>
-                    <div class="content">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a nisi id ex aliquet sollicitudin. Mauris eleifend magna purus, non ullamcorper odio tincidunt at. Nam eu leo eu sapien sagittis aliquet. Sed turpis felis, volutpat vel blandit id, ultrices dapibus tortor. Nullam interdum sagittis purus, vel aliquet dolor. Mauris dictum aliquet nisl vitae facilisis. Curabitur orci odio, hendrerit eu euismod eget, blandit ac eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi libero lacus, posuere a nibh id, viverra aliquam odio.
-                        </p>
-                    </div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a class="button is-danger" href="#">Cancel</a>
-                            </li>
-                            <li>
-                                <a class="button is-primary" href="#">Ok</a>
-                            </li>
-                        </ul>
-                    </nav>
                 </article>
             </section>  
         </main> 

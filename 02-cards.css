@@ -1,0 +1,35 @@
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 100%;
+}
+
+.card {
+  flex: 0 0 35%;
+  box-sizing: border-box;
+  margin: 1rem;
+  max-height: 25%;
+}
+
+.card figure > img {
+  width: 100%;
+  height: auto;
+  margin: 1em 0;
+}
+
+.card h2 {
+  font-family: 'Open Sans';
+  font-size: 20px;
+}
+
+.form-controls {
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 3rem;
+}
+
+.form-controls .button {
+  margin-left:.5em;
+}
