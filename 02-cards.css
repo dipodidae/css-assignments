@@ -11,10 +11,14 @@
   margin-right:1em;
   display:flex;
   flex-direction: column;
+  border-radius: 5px;
+  border-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .card > header {
   padding:.5em;
+  border-bottom: 3px solid white;
 }
 
 .card figure > img {
