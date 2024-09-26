@@ -4,47 +4,47 @@
         <title>Macha's CSS assignment - 02 - Cards</title>
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="02-cards.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
-        <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
-        rel="stylesheet"
-      />
-      <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Open+Sans:ital@1&family=Pattaya&family=Prompt:wght@600&display=swap" rel="stylesheet">
     </head>
+
     <body>
+        <aside id="website-sidebar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./00-website.html" class="nav-link">
+                            Website
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./01-form.html" class="nav-link">
+                            Form
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./02-cards.html" class="nav-link">
+                            Cards
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./03-modal.html" class="nav-link">
+                            Modal
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
         <main>
-            <header>
-                <h1>Cards</h1>
+            <header id="website-header" class="section">
+                <div class="content">
+                    <h1>Cards</h1>
+                </div>
             </header>
-            <aside >
-                <nav class="navbar">
-                    <ul class="navbar-list">
-                        <li class="navbar-item">
-                            <a href="./00-website.html" class="nav-link">
-                            <span class="navbar-item-text">Website</span>
-                            </a>
-                        </li>
-                        <li class="navbar-item">
-                            <a href="./01-form.html" class="nav-link">
-                                <span class="navbar-item-text">Form</span></a>
-                        </li>
-                        <li class="navbar-item">
-                            <a href="./02-cards.html" class="nav-link">
-                                <span class="navbar-item-text">Cards</span>
-                            </a>
-                        </li>
-                        <li class="navbar-item">
-                            <a href="./03-modal.html" class="nav-link">
-                                <span class="navbar-item-text">Modal</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </aside>
-            <section>
+
+            <section id="card-container" class="section">
                 <article class="card">
                     <header>
-                        <h2>Card 01</h2>
+                        <h2>How your dog really feels about you...</h2>
                     </header>
                     <figure>
                         <img src="https://picsum.photos/200" alt="">
@@ -54,20 +54,36 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a nisi id ex aliquet sollicitudin. Mauris eleifend magna purus, non ullamcorper odio tincidunt at. Nam eu leo eu sapien sagittis aliquet. Sed turpis felis, volutpat vel blandit id, ultrices dapibus tortor. Nullam interdum sagittis purus, vel aliquet dolor. Mauris dictum aliquet nisl vitae facilisis. Curabitur orci odio, hendrerit eu euismod eget, blandit ac eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi libero lacus, posuere a nibh id, viverra aliquam odio.
                         </p>
                     </div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a class="button is-danger" href="#">Cancel</a>
-                            </li>
-                            <li>
-                                <a class="button is-primary" href="#">Ok</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <div class="form-controls">
+                        <button class="button is-danger" href="#">Cancel</button>
+                        <button class="button is-primary" href="#">Ok</button> 
+                    </div>    
+                </article>  
+                
+                <article class="card">
+                    <header>
+                        <h2>Wombats; why are they so chonky?</h2>
+                    </header>
+                    <figure>
+                        <img src="https://picsum.photos/200" alt="">
+                    </figure>
+                    <div class="content">
+                        <h2>
+                            Wombats have very short legs
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a nisi id ex aliquet sollicitudin. Mauris eleifend magna purus, non ullamcorper odio tincidunt at. Nam eu leo eu sapien sagittis aliquet. Sed turpis felis, volutpat vel blandit id, ultrices dapibus tortor. Nullam interdum sagittis purus, vel aliquet dolor. Mauris dictum aliquet nisl vitae facilisis. Curabitur orci odio, hendrerit eu euismod eget, blandit ac eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi libero lacus, posuere a nibh id, viverra aliquam odio.
+                        </p>
+                    </div>
+                    <div class="form-controls">
+                        <button class="button is-danger" href="#">Cancel</button>
+                        <button class="button is-primary" href="#">Ok</button> 
+                    </div>   
                 </article>
+
                 <article class="card">
                     <header>
-                        <h2>Card 01</h2>
+                        <h2>Otters, cute or deadly predators?</h2>
                     </header>
                     <figure>
                         <img src="https://picsum.photos/200" alt="">
@@ -77,20 +93,15 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a nisi id ex aliquet sollicitudin. Mauris eleifend magna purus, non ullamcorper odio tincidunt at. Nam eu leo eu sapien sagittis aliquet. Sed turpis felis, volutpat vel blandit id, ultrices dapibus tortor. Nullam interdum sagittis purus, vel aliquet dolor. Mauris dictum aliquet nisl vitae facilisis. Curabitur orci odio, hendrerit eu euismod eget, blandit ac eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi libero lacus, posuere a nibh id, viverra aliquam odio.
                         </p>
                     </div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a class="button is-danger" href="#">Cancel</a>
-                            </li>
-                            <li>
-                                <a class="button is-primary" href="#">Ok</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <div class="form-controls">
+                        <button class="button is-danger" href="#">Cancel</button>
+                        <button class="button is-primary" href="#">Ok</button> 
+                    </div>   
                 </article>
-                <article class="card">
+
+                    <article class="card">
                     <header>
-                        <h2>Card 01</h2>
+                        <h2>What cats don't want you to know</h2>
                     </header>
                     <figure>
                         <img src="https://picsum.photos/200" alt="">
@@ -100,20 +111,15 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a nisi id ex aliquet sollicitudin. Mauris eleifend magna purus, non ullamcorper odio tincidunt at. Nam eu leo eu sapien sagittis aliquet. Sed turpis felis, volutpat vel blandit id, ultrices dapibus tortor. Nullam interdum sagittis purus, vel aliquet dolor. Mauris dictum aliquet nisl vitae facilisis. Curabitur orci odio, hendrerit eu euismod eget, blandit ac eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi libero lacus, posuere a nibh id, viverra aliquam odio.
                         </p>
                     </div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a class="button is-danger" href="#">Cancel</a>
-                            </li>
-                            <li>
-                                <a class="button is-primary" href="#">Ok</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <div class="form-controls">
+                        <button class="button is-danger" href="#">Cancel</button>
+                        <button class="button is-primary" href="#">Ok</button> 
+                    </div>   
                 </article>
+
                 <article class="card">
                     <header>
-                        <h2>Card 01</h2>
+                        <h2>50 different ways to pet a hamster</h2>
                     </header>
                     <figure>
                         <img src="https://picsum.photos/200" alt="">
@@ -123,16 +129,28 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a nisi id ex aliquet sollicitudin. Mauris eleifend magna purus, non ullamcorper odio tincidunt at. Nam eu leo eu sapien sagittis aliquet. Sed turpis felis, volutpat vel blandit id, ultrices dapibus tortor. Nullam interdum sagittis purus, vel aliquet dolor. Mauris dictum aliquet nisl vitae facilisis. Curabitur orci odio, hendrerit eu euismod eget, blandit ac eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi libero lacus, posuere a nibh id, viverra aliquam odio.
                         </p>
                     </div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a class="button is-danger" href="#">Cancel</a>
-                            </li>
-                            <li>
-                                <a class="button is-primary" href="#">Ok</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <div class="form-controls">
+                        <button class="button is-danger" href="#">Cancel</button>
+                        <button class="button is-primary" href="#">Ok</button> 
+                    </div>   
+                </article>
+
+                <article class="card">
+                    <header>
+                        <h2>The way of the sloth</h2>
+                    </header>
+                    <figure>
+                        <img src="https://picsum.photos/200" alt="">
+                    </figure>
+                    <div class="content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a nisi id ex aliquet sollicitudin. Mauris eleifend magna purus, non ullamcorper odio tincidunt at. Nam eu leo eu sapien sagittis aliquet. Sed turpis felis, volutpat vel blandit id, ultrices dapibus tortor. Nullam interdum sagittis purus, vel aliquet dolor. Mauris dictum aliquet nisl vitae facilisis. Curabitur orci odio, hendrerit eu euismod eget, blandit ac eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi libero lacus, posuere a nibh id, viverra aliquam odio.
+                        </p>
+                    </div>
+                    <div class="form-controls">
+                        <button class="button is-danger" href="#">Cancel</button>
+                        <button class="button is-primary" href="#">Ok</button> 
+                    </div>   
                 </article>
             </section>  
         </main> 

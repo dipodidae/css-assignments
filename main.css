@@ -1,4 +1,6 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Open+Sans:ital@1&family=Pattaya&family=Prompt:wght@600&display=swap");
 
 :root {
     background-color: #eac8af;
@@ -20,7 +22,6 @@ body {
 
 html, body {
     height: 100%;
-
 }
 
 main {
@@ -80,7 +81,7 @@ Navbar
 }
 
 .button.is-danger {
-    background: red;
+    background: #d8ac9c;
 }
 
 
@@ -92,8 +93,7 @@ main {
     color: #1b2021;
 }
 
-
-.content {
+.section > .content {
     margin: 0 0 0 100px;
     max-width: 700px;
 }
@@ -109,10 +109,7 @@ main {
     padding: 50px 0;
     font-size: 80px;
     font-family: 'Pattaya', sans-serif;
-    background-image: url('https://picsum.photos/200');
-    background-size: cover;
 }
-
 
  
 

@@ -5,17 +5,14 @@
 }
 
 .field > label {
-    position: absolute;
-    top: -11px;
-    left: 11px;
-    background: #eac8af;
+
     padding: .5em;
     width: inline-block;
-    border:1px solid #fff;
+
 }
 
 .field input {
-    line-height: 3em;
+    line-height: 2em;
 }
 
 input, textarea {
@@ -67,9 +64,8 @@ textarea {
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
+    margin-bottom: 3rem;
 }
-
-
 
 .form-controls .button {
     margin-left:.5em;
